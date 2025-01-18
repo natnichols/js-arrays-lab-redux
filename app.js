@@ -16,7 +16,7 @@ Exercise 2:
 
 // Complete Exercise 2 below...
 
-foods.push('pizza', 'cheeseburger')
+
 
 console.log('Exercise 2 Result:\n',  foods)
 
@@ -27,7 +27,7 @@ Exercise 3:
 
 // Complete Exercise 3 below...
 
-foods.unshift('taco')
+
 
 console.log('Exercise 3 Result:\n', foods)
 
@@ -38,7 +38,7 @@ Exercise 4:
 
 // Complete Exercise 4 below...
 
-let favFood = foods[1]
+
 
 console.log('Exercise 4 Result:\n', typeof favFood !== 'undefined' ? favFood : undefined)
 
@@ -49,7 +49,7 @@ Exercise 5:
 
 // Complete Exercise 5 below...
 
-let splicedFoods = foods.splice(2, 0, 'tofu')
+
 
 console.log('Exercise 5 Result:\n', foods)
 
@@ -60,7 +60,7 @@ Exercise 6:
 
 // Complete Exercise 6 below...
 
-splicedFoods = foods.splice(1, 1, 'sushi', 'cupcake')
+
 
 console.log('Exercise 6 Result:\n', foods)
 
@@ -72,7 +72,7 @@ Exercise 7:
 
 // Complete Exercise 7 below...
 
-const yummy = foods.slice(1, 3)
+
 
 console.log('Exercise 7 Result:\n', typeof yummy !== 'undefined' ? yummy : undefined)
 
@@ -83,7 +83,7 @@ Exercise 8:
 
 // Complete Exercise 8 below...
 
-soyIdx = foods.indexOf('tofu')
+
 
 console.log('Exercise 8 Result:\n', typeof soyIdx !== 'undefined' ? soyIdx : undefined)
 
@@ -95,7 +95,7 @@ Exercise 9:
 
 // Complete Exercise 9 below...
 
-let allFoods = foods.join(' -> ')
+
 
 console.log('Exercise 9 Result:\n', typeof allFoods !== 'undefined' ? allFoods : undefined)
 
@@ -106,7 +106,7 @@ Exercise 10:
 
 // Complete Exercise 10 below...
 
-hasSoup = foods.includes('soup')
+
 
 console.log('Exercise 10 Result:\n', typeof hasSoup !== 'undefined' ? hasSoup : undefined)
 
@@ -120,15 +120,7 @@ const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
 
 // Complete Exercise 11 below...
 
-const odds = []
 
-nums.forEach(num => {
-  if (num % 2 === 0) {
-    return
-  } else if (num % 2 !== 0) {
-    odds.push(num)
-  }
-})
 
 console.log('Exercise 11 Result:\n', typeof odds !== 'undefined' ? odds : undefined)
 
@@ -142,41 +134,7 @@ Exercise 12:
 
 // Complete Exercise 12 below...
 
-let fizz = []
-let buzz = []
-let fizzbuzz = []
 
-// nums.forEach((num) => {
-//   if (num % 3 === 0 && num % 5 === 0) {
-//     fizzbuzz.push(num)
-//     //NN note: fizzbuzz is not sharing any of the elements it should be with fizz and buzz - it appears I've mutated nums and completely removed the elements that should also fall under fizz and buzz. Tried to use the below .slice code to prevent from mutating nums, but it changed the fizzbuzz results to [] AND the number of elements assigned to fizz and buzz didn't change 
-//     // fizzbuzz = nums.slice(num)
-//   } else if (num % 3 === 0) {
-//     fizz.push(num)
-//   } else if (num % 5 === 0) {
-//     buzz.push(num)
-//   }
-// })
-
-//NN OG answer above on lines 145 through 159
-//NN follow along answer below on lines 163 though 179
-// loop through array
-nums.forEach((num) => {
-  // check each number to see if it is divisible by 3, 5, or 3 & 5 (15)
-  if (num % 3 === 0) {
-    fizz.push(num)
-  }
-  if (num % 5 === 0) {
-    buzz.push(num)
-  }
-  if (num % 15 === 0) {
-    fizzbuzz.push(num)
-  }
-    // if divisible by 3, push into fizz array
-    // if divisible by 5, push into buzz array
-    // if divisible by 15, push into fizzbuzz array
-
-})    
 console.log('Exercise 12 Results:')
 console.log('  fizz:', typeof fizz !== 'undefined' ? fizz : undefined)
 console.log('  buzz:', typeof buzz !== 'undefined' ? buzz : undefined)
@@ -197,7 +155,7 @@ const numArrays = [
 
 // Complete Exercise 13 below...
 
-const numList = numArrays[3]
+
 
 console.log('Exercise 13 Result:\n', typeof numList !== 'undefined' ? numList : undefined)
 
@@ -208,7 +166,7 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-const num = numArrays[2][1]
+
 
 console.log('Exercise 14 Result:\n', typeof num !== 'undefined' ? num : undefined)
 
@@ -219,30 +177,6 @@ Exercise 15:
 */
 
 // Complete Exercise 15 below...
-//NN other submitted answer on lines 223 through 225
-// let total = nums.reduce(function(prev, num) {
-//   return prev + num
-// }, 0)
 
-//NN note - after a lot of wheel spinning on Google, I found this method in the Array Iterator Methods lesson. I tried to find a resource on google that could explain how to sum up using .forEach so I could apply that here - I wound up finding the following answer that used .forEach (lines 231 through 235), but I don't understand why it works. Where did the parameters 'parent' and 'child' come from? Is that something another coder named those parameters, or does JS recognize 'parent' and 'child' as parameters in the array here?
-
-let total = 0;
-
-// numArrays.forEach((parent) => {
-//     parent.forEach((child) => {
-//         total += child;
-//     });
-// });
-
-// NN follow along answer below
-console.log('total', total)
-
-numArrays.forEach(arr => {
-  console.log(arr, 'this is a sub array');
-  arr.forEach(num => {
-    console.log(num, 'this is a number in the sub array');
-    total += num
-  })
-})
 
 console.log('Exercise 15 Result:\n', typeof total !== 'undefined' ? total : undefined)
