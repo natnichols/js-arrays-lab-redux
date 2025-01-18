@@ -49,7 +49,7 @@ Exercise 5:
 
 // Complete Exercise 5 below...
 
-
+foods.splice(2, 0, 'tofu')
 
 console.log('Exercise 5 Result:\n', foods)
 
