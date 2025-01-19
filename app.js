@@ -120,7 +120,13 @@ const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
 
 // Complete Exercise 11 below...
 
+let odds = []
 
+nums.forEach(function (num) {
+  if (num % 2 !== 0) {
+    odds.push(num)
+  }
+})
 
 console.log('Exercise 11 Result:\n', typeof odds !== 'undefined' ? odds : undefined)
 
