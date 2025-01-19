@@ -95,7 +95,7 @@ Exercise 9:
 
 // Complete Exercise 9 below...
 
-
+let allFoods = foods.join(' -> ')
 
 console.log('Exercise 9 Result:\n', typeof allFoods !== 'undefined' ? allFoods : undefined)
 
