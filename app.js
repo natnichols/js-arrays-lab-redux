@@ -200,5 +200,12 @@ Exercise 15:
 
 // Complete Exercise 15 below...
 
+let total = 0
+
+numArrays.forEach(function (arr) {
+  arr.forEach(function (num) {
+    total += num
+  })
+})
 
 console.log('Exercise 15 Result:\n', typeof total !== 'undefined' ? total : undefined)
