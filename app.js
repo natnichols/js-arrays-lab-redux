@@ -140,6 +140,22 @@ Exercise 12:
 
 // Complete Exercise 12 below...
 
+let fizz = []
+let buzz = []
+let fizzbuzz = []
+
+nums.forEach(function (num) {
+  if (num % 3 === 0) {
+    fizz.push(num)
+  } 
+  if (num % 5 === 0) {
+    buzz.push(num)
+  } 
+  if (num % 15 === 0) {
+    fizzbuzz.push(num)
+  }
+})
+
 
 console.log('Exercise 12 Results:')
 console.log('  fizz:', typeof fizz !== 'undefined' ? fizz : undefined)
