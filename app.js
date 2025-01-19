@@ -106,7 +106,7 @@ Exercise 10:
 
 // Complete Exercise 10 below...
 
-
+let hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 Result:\n', typeof hasSoup !== 'undefined' ? hasSoup : undefined)
 
