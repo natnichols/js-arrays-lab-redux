@@ -177,7 +177,7 @@ const numArrays = [
 
 // Complete Exercise 13 below...
 
-
+let numList = numArrays[3]
 
 console.log('Exercise 13 Result:\n', typeof numList !== 'undefined' ? numList : undefined)
 
